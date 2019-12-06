@@ -1,0 +1,19 @@
+1).//a[@id="ph_my"]
+2).//a[@id="PH_allProjects"]
+3).//a[@href="http://r.mail.ru/clb657254/go.mail.ru/search_images?fr=mailru&fm=1&test_id=746"]
+4).//label[@class="search__icon"]
+5).//input[@id="search:submit"]
+6).//span[@id="cal"]
+7).//a[@href="//lady.mail.ru/"]
+8).//div[@id="tabs:dropdown-container"]
+9).//input[@id="mailbox:login"]
+10).//label[@for="mailbox:saveauth"]
+11) ICQ там нету, поэтому я сделал «Облако»:
+.//a[@href="https://cloud.mail.ru/?utm_source=mail&utm_medium=crosspromo&utm_campaign=appslist&utm_content=2"]
+12)(.//a[@href="//sportmail.ru"])[2]
+13) Клуба «Mail.ru для бизнеса» тоже нет, поэтому я сделал «Пульс»:
+.//a[@href="https://pulse.mail.ru/?fm=1"]
+14).//div[@class="notify__body"]
+15)(.//a[@href="https://news.mail.ru/currency/"])[1]
+16) «Включить ленту» нету, поэтому «О компании»:
+.//a[@href="//corp.mail.ru/"]

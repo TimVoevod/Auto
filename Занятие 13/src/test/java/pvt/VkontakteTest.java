@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class VkontakteTest {
 
-    private CloseableHttpClient client = HttpClientBuilder.create().build();;
+    private CloseableHttpClient client = HttpClientBuilder.create().build();
 
     private Vkontakte vkontakte = new Vkontakte();
 

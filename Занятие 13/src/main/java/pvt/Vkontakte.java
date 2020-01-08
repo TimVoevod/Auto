@@ -14,7 +14,8 @@ public class Vkontakte {
 
     public void postOnTheWall(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder = new URIBuilder("https://api.vk.com/method/wall.post?");
-        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("owner_id", "268840289")
                 .setParameter("message", "123456")
                 .setParameter("v", "5.103");
@@ -25,7 +26,8 @@ public class Vkontakte {
 
     public String getLastPostId(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder = new URIBuilder("https://api.vk.com/method/wall.get?");
-        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("owner_id", "268840289")
                 .setParameter("v", "5.103");
         HttpGet request = new HttpGet(builder.build());
@@ -53,7 +55,8 @@ public class Vkontakte {
 
     public String getLastPostText(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder = new URIBuilder("https://api.vk.com/method/wall.get?");
-        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("owner_id", "268840289")
                 .setParameter("v", "5.103");
         HttpGet request = new HttpGet(builder.build());
@@ -81,7 +84,8 @@ public class Vkontakte {
 
     public String getDeleteResponse(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder = new URIBuilder("https://api.vk.com/method/wall.get?");
-        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("owner_id", "268840289")
                 .setParameter("v", "5.103");
         HttpGet request = new HttpGet(builder.build());
@@ -99,7 +103,8 @@ public class Vkontakte {
 
     public void editPost(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder2 = new URIBuilder("https://api.vk.com/method/wall.edit?");
-        builder2.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder2.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("post_id", getLastPostId(client))
                 .setParameter("owner_id", "268840289")
                 .setParameter("message", "1234567")
@@ -111,7 +116,8 @@ public class Vkontakte {
 
     public void deletePost(CloseableHttpClient client) throws URISyntaxException, IOException {
         URIBuilder builder3 = new URIBuilder("https://api.vk.com/method/wall.delete?");
-        builder3.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138fae07cc5a44db14267bbd0a3b01306ef")
+        builder3.setParameter("access_token", "7ee18d68dd8090fd52300a03eb3cf234445d4c5f7400a8e259138" +
+                "fae07cc5a44db14267bbd0a3b01306ef")
                 .setParameter("post_id", getLastPostId(client))
                 .setParameter("owner_id", "268840289")
                 .setParameter("v", "5.103");

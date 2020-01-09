@@ -1,0 +1,7 @@
+13:59:03,182  INFO main Vkontakte:postOnTheWall:28 - Информационное сообщение!
+13:59:39,159  INFO main Vkontakte:postOnTheWall:28 - Информационное сообщение!
+14:00:57,824  INFO main Vkontakte:postOnTheWall:28 - Информационное сообщение!
+14:05:45,629  INFO main Vkontakte:postOnTheWall:30 - Информационное сообщение!
+14:07:19,907  INFO main Vkontakte:postOnTheWall:30 - Добавлен пост!
+14:07:20,301  INFO main Vkontakte:editPost:107 - Пост отредактирован!
+14:07:20,652  INFO main Vkontakte:deletePost:119 - Пост удалён!

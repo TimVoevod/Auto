@@ -1,0 +1,21 @@
+1) select * from Categories
+2) select CategoryID, CategoryName from Categories
+3) select Address from Suppliers
+4) select * from Products order by Price desc
+5) select * from Orders order by CustomerID, ShipperID
+6) select * from Products where Price>40 order by ProductName desc
+7) select * from Products where Price between 20 and 50 order by Unit
+8) select * from Products where Price between 20 and 100 or CategoryID=6
+9) select * from Products where Price=46 or Price=53 or Price=55
+   select * from Products where Price in(46, 53, 55)
+10) select * from Products where Price not in(46, 53, 55)
+11) select * from Products where ProductName like '%han%'
+12) insert into Shippers (ShipperID, ShipperName, Phone) values ('4', 'Qwer', '3332222')
+13) insert into Shippers (ShipperID, ShipperName) values ('5', 'Qwert')
+14) insert into Categories (CategoryName, Description) select ShipperName, Phone from Shippers (Не понял, что здесь нужно было сделать по смыслу, вроде не логично, но по факту работает.) 
+15) insert into Categories (CategoryName, Description) select ShipperName, Phone from Shippers where ShipperName='Speedy Express'
+16) delete from Shippers where ShipperName='Speedy Express'
+17) delete from Products where Price<50
+18) delete from Orders
+19) update Categories set Description='Lyboe Drugoe' where CategoryName='Beverages'
+20) update Products set Price='Lyubaya Drugaya' where ProductName='Chais'
